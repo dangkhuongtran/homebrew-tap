@@ -9,6 +9,10 @@ class CloudProviderKindAT010 < Formula
 
   def install
     system "go", "build", *std_go_args
+    # The binary is under "bin/cloud-provider-kind@0.10" in the source, so we need to rename it to "cloud-provider-kind"
+    mv bin/"cloud-provider-kind@0.10", "cloud-provider-kind"
+    # Then we can install the binary to the correct location
+    bin.install "cloud-provider-kind"
   end
 
   test do
