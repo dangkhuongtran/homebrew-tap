@@ -2,7 +2,7 @@ class CloudProviderKindAT010 < Formula
   desc "Cloud provider for KIND clusters"
   homepage "https://kubernetes-sigs.github.io/cloud-provider-kind/"
   url "https://github.com/kubernetes-sigs/cloud-provider-kind/archive/refs/tags/v0.10.0.tar.gz"
-  sha256 "db9829197b1940d5cce0a39c352d9d15adb58877b82431cf2fdc0e7f874253ba"
+  sha256 "447ce982e8103934c92a466438cad961a7ca3f817534c3b53c80b12929679b95"
   license "Apache-2.0"
 
   depends_on "go" => :build
